@@ -1,0 +1,59 @@
+Title: Shu Ee Ong (section E) and Landon Walker (section B)
+
+Problem Description: 
+We are creating a program that allows a user to play Tic Tac Toe against another person.
+The first player will be the X’s by default, and the second player will be the O's. 
+The program will then animate the game using the console and allow the player to play the game by interacting with console inputs. 
+The game will then determine the winner, looser, or tie and display the winner in a seperate .txt file using file i/o.
+                     
+Problem Documentation: 
+This is a simple Tac Tac Toe game that is played in the console. 
+It will start by prompting player 1 to make a move. Making a move involves choosinga number on the board, 1-9, pressing that number and then pressing enter.
+Then it will be player 2's move and they will follow the exact same process.
+This will be done until a winner is determined or a tie occurs.
+If you wanted to you could allow the players to enter their names and choose a symbol. 
+You could also make a mode where you play against the computer and the computer is intelligent. This could be implemented using more classes. 
+The computer mode would require some understanding the winning scenarios and making it not just play random moves.
+                     
+        
+Tests: 
+1. Inputs: 1, 2, 3, 4, 5, 6, 7
+   Player 1 wins. Winning board: 
+   [X][O][X]
+   [O][X][O]
+   [X][8][9]
+   
+2. Inputs: 1, 1, 1, 2, 2, 2, 3
+   Player 1 wins. Winning board:
+   [X][X][X]
+   [4][5][6]
+   [7][8][9]
+   
+3. Inputs: -1, -1, 2, 1000, 1000, 5, -1000, -1000, 8
+   Player 2 wins. Winning board:
+   [1][O][3]
+   [4][O][6]
+   [7][O][9]
+  
+4. Inputs: 2, -1, -1, 5, 10, 10, 8
+   Player 1 wins. Winning board:
+   [1][X][3]
+   [4][X][6]
+   [7][X][9]
+
+5. Inputs: 1, 2, 4, 5, 3, 6, 8, 7, 9
+   It's a tie. Final board:
+   [X][O][X]
+   [X][O][O]
+   [O][X][X]
+   
+Reflections: 
+Woah this final project was long. It was fun to make and very satisfying to finish. 
+Some problems we encountered was the peer programming process, because it might be hard to follow one another's work even when we switch off every 15 minutes.
+Furthermore, many problems came up with the tests, when we realized we didn't include the possibilities for invalid inputs by the user. 
+Several functions were added after that realization, therefore the project took a little more time after we thought we were done. 
+There was also trouble with a const function, where placing a "const" after the two getter functions in board.cpp and board.h actually produced an error. 
+We therefore just took out the "const." 
+If we could do this project again, we would love to be able to create an intelligent computer player that can match the level of a human player. 
+That was not done for this lab because the number of possibilities for a computer move was too large and the process too complicated. 
+Overall, we had a good time with this project and we got to improve our programming skills.
